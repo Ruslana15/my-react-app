@@ -1,0 +1,46 @@
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    visibility: hidden;
+  }
+  
+  .tooltip.top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip.bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip.left {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .tooltip.right {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .tooltip-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  

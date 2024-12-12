@@ -1,0 +1,33 @@
+.typography {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .typography.sm {
+    font-size: 12px;  /* Размер для sm */
+    line-height: 1.5;
+  }
+  
+  .typography.md {
+    font-size: 16px;  /* Размер для md */
+    line-height: 1.6;
+  }
+  
+  .typography.lg {
+    font-size: 20px;  /* Размер для lg */
+    line-height: 1.7;
+  }
+  
+  .typography::first-line {
+    text-indent: 1em; /* Отступ первой строки */
+  }
+  
+  .typography a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .typography a:hover {
+    text-decoration: underline;
+  }
+  
